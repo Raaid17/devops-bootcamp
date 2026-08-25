@@ -1,0 +1,19 @@
+services:
+  profile:
+    image: redis
+    volumes:
+      - me:/data
+
+  avatar:
+    image: ghcr.io/infratify/arena-avatar
+    ports:
+      - "8080:8080"
+    environment:
+      NAME: AVATAR1
+      COLOR: green
+      SERVER: 13.213.70.70
+    depends_on:
+      - profile
+
+volumes:
+  me:

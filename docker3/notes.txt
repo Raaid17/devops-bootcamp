@@ -1,0 +1,12 @@
+NETWORK ID     NAME      DRIVER    SCOPE
+b5dcb75ce502   arena     bridge    local
+6b2c8575ef2f   bridge    bridge    local
+f06350440818   host      host      local
+7a11508e09f7   none      null      local
+
+DRIVER    VOLUME NAME
+local     me
+
+ECR image: 396608796485.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/raaid17:latest
+
+

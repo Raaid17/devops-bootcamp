@@ -6,7 +6,7 @@ terraform {
       version = "~> 6.0"
     }
   }
-  
+
   backend "s3" {
     bucket       = "bootcamp-2026-raaid17"
     key          = "terraform3/terraform.tfstate"

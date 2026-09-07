@@ -3,5 +3,5 @@ output "rackula_url" {
 }
 
 output "ssm_command" {
-  value = "aws ssm start-session --target ${module.my_server.id} --region ${data.aws_region.current.name}"
+  value = "aws ssm start-session --target ${module.my_server.id} --region ${data.aws_region.current.region}"
 }

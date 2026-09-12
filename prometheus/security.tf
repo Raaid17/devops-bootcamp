@@ -25,7 +25,7 @@ module "my_sg" {
       to_port     = 80
     }
     prometheus = {
-      cidr_ipv4   = var.my_network_cidr
+      cidr_ipv4   = "${var.my_network_cidr}"
       ip_protocol = "tcp"
       from_port   = 9090
       to_port     = 9090
@@ -36,6 +36,7 @@ module "my_sg" {
       from_port   = 9100
       to_port     = 9100
     }
+
   }
 
   egress_rules = {

@@ -12,7 +12,7 @@ module "my_sg" {
 
   ingress_rules = {
     ssh = {
-      cidr_ipv4   = "27.125.249.0/24"
+      cidr_ipv4   = "${chomp(data.http.myip.response_body)}/32"
       ip_protocol = "tcp"
       from_port   = 22
       to_port     = 22

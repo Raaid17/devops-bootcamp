@@ -92,3 +92,7 @@ override.tf.json
 terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
+
+### Local tooling ###
+# OpenCode config (local MCP server setup)
+opencode.json
